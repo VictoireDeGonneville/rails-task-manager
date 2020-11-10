@@ -1,0 +1,41 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+ .title {
+  color: black;
+  font-family: 'Yatra One', cursive;
+ }
+.banner {
+  background-image: url('pacman.jpg');
+  position: relative;
+   height: 70px;
+   z-index: 1;
+   border-style: solid;
+   border-width: 1px;
+   border-color: gray;
+   font-family: 'Lobster', cursive;
+   color: #7579e7;
+
+}
+
+.body {
+  background-color: #3797a4;
+}
+
+.form {
+  background-color: #3797a4;
+  font-family: 'Yatra One', cursive;
+
+}
+
+.form0{
+  background-color: #3797a4;
+  font-family: 'Yatra One', cursive;
+
+}
+
+.form1 {
+  background-color: #3797a4;
+  font-family: 'Yatra One', cursive;
+
+}

@@ -1,0 +1,28 @@
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Yatra+One&display=swap" rel="stylesheet">
+<div class = "banner">
+<h2> My tasks </h2>
+</div>
+<% @tasks.each do |task| %>
+<div class= "body">
+<div class= "title">
+<h3> <input type ="checkbox"
+  <% if task.completed %>
+  "checked"
+  <%else%>
+  "unchecked"
+  <% end %>>
+  <%= task.title %>
+</div>
+</h3>
+<%= link_to "Show", task_path(task.id)%>
+
+<p><%= link_to "Edit a task", edit_task_path(task) %></p>
+<p><%= link_to "Add a task", new_task_path %></p>
+<p>
+<%= link_to "Delete", task_path(task),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+</p>
+<% end %>
+</div>
+
